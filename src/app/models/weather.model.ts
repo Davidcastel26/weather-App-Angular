@@ -1,4 +1,4 @@
-export interface Root {
+export interface WeatherData {
     cloud_pct: number
     temp: number
     feels_like: number
