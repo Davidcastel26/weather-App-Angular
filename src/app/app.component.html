@@ -1,2 +1,17 @@
+<div class="container">
+  <div class="upper-data">
+    <img src="../assets/pexels-imad-clicks-10679350.jpg" *ngIf="14 > 15" alt="">
+    <img src="../assets/pexels-andreas-13722038.jpg" *ngIf="14 < 15"  alt="">
+
+    <div class="weather-data">
+      <div class="location"> CITY </div>
+      <div class="temperature">{{ 14.40 | number: '1.0-0' }}°</div>
+    </div>
+
+  </div>
+  <div class="lower-data">
+
+  </div>
+</div>
 
 <router-outlet></router-outlet>
