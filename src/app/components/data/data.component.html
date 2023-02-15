@@ -2,13 +2,16 @@
  <div *ngIf="hereData" class="more-info-container">
     <!-- Here we are displaying the info  -->
    <div class="info-block">
-     <div class="info-block-label">
+    
+    <div class="info-block-label">
        <img [src]="hereData.images[0]" alt="">
        <span>{{ hereData.description[0] }}</span>
      </div>
+     
      <div class="info-block-value">
        {{ dataWeather.min_temp}}°C
      </div>
+     
    </div>
     <!-- Here we are displaying the info  -->
    <!-- <div class="info-block">

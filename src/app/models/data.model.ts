@@ -12,3 +12,10 @@ export interface DataHere {
     images: string[]
     description: string[]
 }
+
+export interface Product {
+  id: number;
+  title: string;
+  price: number;
+  images: string[];
+}

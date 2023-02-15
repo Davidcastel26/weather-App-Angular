@@ -1,0 +1,35 @@
+<ng-container *ngIf="dataProduct" class="container">
+
+    <div class="upper-data">
+      
+        <img [ngSrc]="dataProduct.images[0]"  *ngIf="14 < 15"  width="400" height="400">
+      
+      <div class="weather-data">
+        <div class="location"> {{ dataProduct.title }} </div>
+      </div>
+  
+    </div>
+  
+    <div class="lower-data">
+  
+        <div class="more-info-label">
+            Product info
+        </div>
+  
+       <div class="more-info-container">
+        <div class="info-block">
+         
+            <div class="info-block-label">
+                Price: 
+            </div>
+       
+        </div>
+        <div class="info-block-value">
+            {{ dataProduct.price }}
+        </div>
+      </div>
+        
+    </div>
+</ng-container>
+  
+  
