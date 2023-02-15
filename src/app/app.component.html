@@ -18,49 +18,8 @@
       More info
     </div>
 
-    <!-- Here we are displaying the info  -->
-    <div class="more-info-container">
-       <!-- Here we are displaying the info  -->
-      <div class="info-block">
-        <div class="info-block-label">
-          <img src="../assets/cold.png" alt="">
-          <span>min</span>
-        </div>
-        <div class="info-block-value">
-          10°C
-        </div>
-      </div>
-       <!-- Here we are displaying the info  -->
-      <div class="info-block">
-        <div class="info-block-label">
-          <img src="../assets/hot.png" alt="">
-          <span>max</span>
-        </div>
-        <div class="info-block-value">
-          20°C
-        </div>
-      </div>
-       <!-- Here we are displaying the info  -->
-      <div class="info-block">
-        <div class="info-block-label">
-          <img src="../assets/humidity.png" alt="">
-          <span>humidity</span>
-        </div>
-        <div class="info-block-value">
-          77%
-        </div>
-      </div>
-         <!-- Here we are displaying the info  -->
-      <div class="info-block">
-        <div class="info-block-label">
-          <img src="../assets/wind.png" alt="">
-          <span>wind</span>
-        </div>
-        <div class="info-block-value">
-          11km/h
-        </div>
-      </div>  
-    </div>
+    <app-data  [dataWeather]="Wdata" *ngFor="let Wdata of apiData" ></app-data>
+
   </div>
 </div>
 
