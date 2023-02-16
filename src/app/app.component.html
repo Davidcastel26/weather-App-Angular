@@ -18,7 +18,18 @@
       More info
     </div>
 
-    <app-data  [dataWeather]="Wdata" *ngFor="let Wdata of apiData" ></app-data>
+     <!-- Here we are displaying the info  -->
+    <div class="info-block">
+     <div class="info-block-label">
+       <img src="../assets/hot.png" alt="">
+       <span>max</span>
+     </div>
+     <div class="info-block-value">
+       20°C
+     </div>
+   </div> 
+
+    <!-- <app-data  [dataWeather]="Wdata" *ngFor="let Wdata of apiData" ></app-data> -->
 
   </div>
 </div>
